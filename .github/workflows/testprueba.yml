@@ -1,0 +1,9 @@
+name: TestPrueba
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar ejecucion GreenCI
+        run: echo "Workflow generado por GreenCI ejecutado correctamente" && uname -a
